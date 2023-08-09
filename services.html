@@ -1,0 +1,546 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald&family=Passion+One&family=Roboto&family=Roboto+Condensed:wght@300&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap" rel="stylesheet">
+  
+  <style>
+
+    @media (max-width: 768px) {
+h1 {
+    width: 448px;
+    display: inline-block;
+    text-align: center;
+    margin-left: 58px;
+    font-size: 10px;
+}
+      .flex {
+        flex-direction: column;
+        align-items: center;
+      }
+      .last .buttona {
+    margin-top: -100px;
+    width: 276px;
+    font-size: 20px;
+    margin-left: 150px;
+}
+.image-container {
+    width: 640px !important;
+    margin-left: -147px;
+}
+.second-content p {
+    font-size: 10px !important;
+    margin-left: -120px !important;
+    display: inline-block;
+    margin-top: -10px;
+    padding: 0px 0px 10px 0px;
+}
+.second-content h6 {
+    font-size: 10px !important;
+    margin-left: -109px !important;
+}
+.third-content p {
+    font-size: 10px !important;
+    margin-left: 39px !important;
+    padding: 27px 1px 0px 1px;
+}
+.third-content h6 {
+  font-size: 10px !important;
+    margin-left: -109px !important;
+    margin-top: -39px !important;
+}
+.four-content p {
+    font-size: 10px !important;
+    margin-left: 349px !important;
+    padding: 27px 1px 0px 1px;
+}
+.four-content h6 {
+  font-size: 10px !important;
+    margin-left: -109px !important;
+    margin-top: -39px !important;
+}
+.five-content p {
+    font-size: 10px !important;
+    margin-left: 191px !important;
+    padding: 27px 1px 0px 1px;
+}
+.five-content h6 {
+  font-size: 10px !important;
+    margin-left: -109px !important;
+    margin-top: -39px !important;
+}
+    }
+
+    @media (max-width: 480px) {
+      h1{
+        margin-left: -30px;
+      }
+      .main {
+        margin-left: 32px !important;
+      }
+
+      .second-content,
+      .third-content,
+      .four-content,
+      .five-content {
+        margin-left: 0;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 25px;
+      }
+
+      .image-item {
+        margin: 0 10px;
+      }
+
+      .flex {
+        margin: 50px 10px;
+      }
+
+      .last .buttona {
+        margin-top: -102px;
+        margin-left: 95px;
+        font-size: 20px;
+      }
+      .thid img{
+        display: none;
+      }
+    }
+    h1 {
+      text-align: center;
+      font-size: 35px;
+      font-weight: 900;
+    }
+
+    .flex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 100px;
+      padding: 30px;
+      margin-top: 50px;
+    }
+
+    .image-container {
+      position: relative;
+      width: 100%;
+      height: 60%;
+      border-radius: 10px 10px 0 0;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .image-item {
+      position: relative;
+      width: 250px;
+      height: 300px;
+      margin: 0 30px;
+    }
+
+    .image-item img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .hover-layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.4s;
+    }
+
+    .hover-layer button {
+      background: none;
+      border: none;
+      font-size: 25px;
+      color: white;
+      transition: 0.5s all;
+    }
+
+    .hover-layer button:hover {
+      background-color: rgb(0, 0, 0);
+      border: 1px transparent;
+      border-radius: 10px;
+    }
+
+    .second-content {
+      width: 100%;
+      height: 40%;
+      display: flex;
+      border-radius: 0 0 10px 10px;
+      transition: all 0.4s;
+      font-size: 1rem;
+      text-align: center;
+      position: relative;
+    }
+
+    .second-content p {
+      margin-left: 30px;
+      font-size: 19px;
+      margin-top: 20px;
+      font-weight: 600;
+      font-family: 'Anton', sans-serif;
+      font-family: 'Oswald', sans-serif;
+      font-family: 'Passion One', cursive;
+      font-family: 'Roboto', sans-serif;
+      font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    .second-content h6 {
+      color: red;
+      margin-top: 75px;
+      margin-left: -208px;
+      font-size: 18px;
+      font-weight: 600;
+      font-family: 'Anton', sans-serif;
+      font-family: 'Oswald', sans-serif;
+      font-family: 'Passion One', cursive;
+      font-family: 'Roboto', sans-serif;
+      font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    .second-content h6 del {
+      color: black;
+    }
+
+    .third-content {
+      width: 100%;
+      height: 40%;
+      display: flex;
+      border-radius: 0 0 10px 10px;
+      transition: all 0.4s;
+      font-size: 1rem;
+      text-align: center;
+      position: relative;
+    }
+
+    .third-content p {
+      margin-left: 344px;
+      font-size: 19px;
+      margin-top: -119px;
+      font-weight: 600;
+      font-family: 'Anton', sans-serif;
+      font-family: 'Oswald', sans-serif;
+      font-family: 'Passion One', cursive;
+      font-family: 'Roboto', sans-serif;
+      font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    .third-content h6 {
+      color: rgb(255, 0, 238);
+      margin-top: -62px;
+      margin-left: -208px;
+      font-size: 18px;
+      font-weight: 600;
+      font-family: 'Anton', sans-serif;
+      font-family: 'Oswald', sans-serif;
+      font-family: 'Passion One', cursive;
+      font-family: 'Roboto', sans-serif;
+      font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    .third-content h6 del {
+      color: black;
+    }
+
+    .four-content {
+      width: 100%;
+      height: 40%;
+      display: flex;
+      border-radius: 0 0 10px 10px;
+      transition: all 0.4s;
+      font-size: 1rem;
+      text-align: center;
+      position: relative;
+    }
+
+    .four-content p {
+      margin-left: 665px;
+      font-size: 19px;
+      margin-top: -119px;
+      font-weight: 600;
+      font-family: 'Anton', sans-serif;
+      font-family: 'Oswald', sans-serif;
+      font-family: 'Passion One', cursive;
+      font-family: 'Roboto', sans-serif;
+      font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    .four-content h6 {
+      color: rgb(81, 0, 255);
+      margin-top: -62px;
+      margin-left: -208px;
+      font-size: 18px;
+      font-weight: 600;
+      font-family: 'Anton', sans-serif;
+      font-family: 'Oswald', sans-serif;
+      font-family: 'Passion One', cursive;
+      font-family: 'Roboto', sans-serif;
+      font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    .four-content h6 del {
+      color: black;
+    }
+
+    .five-content {
+      width: 100%;
+      height: 40%;
+      display: flex;
+      border-radius: 0 0 10px 10px;
+      transition: all 0.4s;
+      font-size: 1rem;
+      text-align: center;
+      position: relative;
+    }
+
+    .five-content p {
+      margin-left: 981px;
+      font-size: 19px;
+      margin-top: -119px;
+      font-weight: 600;
+      font-family: 'Anton', sans-serif;
+      font-family: 'Oswald', sans-serif;
+      font-family: 'Passion One', cursive;
+      font-family: 'Roboto', sans-serif;
+      font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    .five-content h6 {
+      color: rgb(255, 230, 0);
+      margin-top: -62px;
+      margin-left: -208px;
+      font-size: 18px;
+      font-weight: 600;
+      font-family: 'Anton', sans-serif;
+      font-family: 'Oswald', sans-serif;
+      font-family: 'Passion One', cursive;
+      font-family: 'Roboto', sans-serif;
+      font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    .five-content h6 del {
+      color: black;
+    }
+
+    .card:hover .second-content {
+      opacity: 1;
+    }
+
+    .card:hover .hover-layer {
+      opacity: 1;
+    }
+
+    .awais {
+      margin-top: -145px;
+    }
+
+    .last button {
+      margin-top: -60px;
+      font-family: 'Bungee Outline', cursive;
+      font-size: 80px;
+      background: none;
+      border: none;
+      margin-left: 200px;
+    }
+
+    .buttona {
+      background: none;
+      border: none;
+      height: 3em;
+      border-radius: 30em;
+      font-size: 15px;
+      font-family: inherit;
+      border: none;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      box-shadow: 6px 6px 12px #c5c5c5,
+        -6px -6px 12px #ffffff;
+    }
+
+    .buttona::before {
+      content: '';
+      width: 0;
+      height: 3em;
+      border-radius: 30em;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: linear-gradient(to right, #0fd850 0%, #f9f047 100%);
+      transition: .5s ease;
+      display: block;
+      z-index: -1;
+    }
+
+    .buttona:hover::before {
+      width: 15em;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 onmouseover="this.style.color='red'" onmouseout="this.style.color='black'">OUR SERVICES</h1>
+  <div class="main">
+    <div class="flex">
+      <div class="card">
+        <div class="image-container">
+          <div class="image-item">
+            <img class="one" src="./Star_Trac_4_Series_Treadmillpng_2000x.webp">
+            <div class="hover-layer"><button>Quick View</button></div>
+          </div>
+          <div class="image-item">
+            <img src="./Image-Nautilus-Instinct-DualAdjustablePulley_2000x.webp" alt="">
+            <div class="hover-layer"><button>Quick View</button></div>
+          </div>
+          <div class="image-item">
+            <img class="third" src="./NewStairMasterSM3-GoogleAds_2000x.webp" alt="">
+            <div class="hover-layer"><button>Quick View</button></div>
+          </div>
+          <div class="image-item">
+            <img src="./ScreenShot2020-04-14at8.26.49PM_2000x.webp">
+            <div class="hover-layer"><button>Quick View</button></div>
+          </div>
+        </div>
+        <div class="second-content">
+          <p>STAR TRAC 4 SERIES TREADMILL <br> 4TR WITH LCD (NEW 2023)</p>
+          <h6 onmousemove="this.style.color='darkgreen'" onmouseout="this.style.color='red'">$3,599.00 &nbsp;
+            <del>$4,399.00</del></h6>
+        </div>
+        <div class="third-content">
+          <p>NEW 2023 NAUTILUS INSTINCT <br> DUAL ADJUSTABLE PULLEY </p>
+          <h6 onmousemove="this.style.color='pink'" onmouseout="this.style.color='blue'">$5,599.00 &nbsp;
+            <del>$6,399.00</del></h6>
+        </div>
+        <div class="four-content">
+          <p>STAIRMASTER STEPMILL SM3 <br> (2022 MODEL)</p>
+          <h6 onmousemove="this.style.color='brown'" onmouseout="this.style.color='grey'">$6,599.00 &nbsp;
+            <del>$7,399.00</del></h6>
+        </div>
+        <div class="five-content">
+          <p>NEW 2023 BODY-SOLID DELUXE <br> 2 STACK CABLE CROSSOVER</p>
+          <h6 onmousemove="this.style.color='yellow'" onmouseout="this.style.color='cyan'">$10,599.00 &nbsp;
+            <del>$11,399.00</del></h6>
+        </div>
+      </div>
+    </div>
+    <div class="awais">
+      <div class="flex">
+        <div class="card">
+          <div class="image-container">
+            <div class="image-item">
+              <img src="./o_2000x.avif">
+              <div class="hover-layer"><button>Quick View</button></div>
+            </div>
+            <div class="image-item">
+              <img src="./Star_Trac_4CT_4_Series_Cross_Trainer_2000x.webp" alt="">
+              <div class="hover-layer"><button>Quick View</button></div>
+            </div>
+            <div class="image-item">
+              <img src="./ScreenShot2022-12-12at11.03.34AM_2000x.webp" alt="">
+              <div class="hover-layer"><button>Quick View</button></div>
+            </div>
+            <div class="image-item">
+              <img src="./stairmaster-8-1_2_500x500_ae48d6b6-a5d1-46f3-98ce-d192658b8e65_400x.webp">
+              <div class="hover-layer"><button>Quick View</button></div>
+            </div>
+          </div>
+          <div class="second-content">
+            <p>NEW 2023 NAUTILUS LEG PRESS <br> ANGLED 45 DEGREE PLATE</p>
+            <h6 onmousemove="this.style.color='red'" onmouseout="this.style.color='black'">$12,599.00 &nbsp;
+              <del>$13,399.00</del></h6>
+          </div>
+          <div class="third-content">
+            <p>NEW 2023 NAUTILUS(2022 mode)<br> DUAL ADJUSTABLE PULLEY </p>
+            <h6 onmousemove="this.style.color='blue'" onmouseout="this.style.color='pink'">$5,599.00 &nbsp;
+              <del>$6,399.00</del></h6>
+          </div>
+          <div class="four-content">
+            <p>Lorem ipsum dolor sit amet was i <br> consectetur adipisicing elit.</p>
+            <h6 onmousemove="this.style.color='grey'" onmouseout="this.style.color='brown'">$6,599.00 &nbsp;
+              <del>$7,399.00</del></h6>
+          </div>
+          <div class="five-content">
+            <p>NEW 2023 BODY-SOLID DELUXE <br> 2 STACK CABLE CROSSOVER</p>
+            <h6 onmousemove="this.style.color='yellow'" onmouseout="this.style.color='cyan'">$10,599.00 &nbsp;
+              <del>$11,399.00</del></h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="awais2">
+      <div class="awais">
+        <div class="flex">
+          <div class="card">
+            <div class="image-container">
+              <div class="image-item">
+                <img src="./NautilusLegPressPlateLoadedAngled45degress_2000x.webp">
+                <div class="hover-layer"><button>Quick View</button></div>
+              </div>
+              <div class="image-item">
+                <img src="./BodySolidCommercialT150Treadmill_2000x.webp" alt="">
+                <div class="hover-layer"><button>Quick View</button></div>
+              </div>
+              <div class="image-item">
+                <img src="./ScreenShot2020-04-14at8.26.49PM_2000x (1).webp" alt="">
+                <div class="hover-layer"><button>Quick View</button></div>
+              </div>
+              <div class="image-item">
+                <img src="./o_2000x (1).avif">
+                <div class="hover-layer"><button>Quick View</button></div>
+              </div>
+            </div>
+            <div class="second-content">
+              <p>Lorem ipsum dolor sit ametion an<br> ANGLED 45 DEGREE PLATE</p>
+              <h6 onmousemove="this.style.color='yellow'" onmouseout="this.style.color='blue'">$12,599.00 &nbsp;
+                <del>$13,399.00</del></h6>
+            </div>
+            <div class="third-content">
+              <p>Lorem ipsum dolor sit amet cons<br> DUAL ADJUSTABLE PULLEY </p>
+              <h6 onmousemove="this.style.color='green'" onmouseout="this.style.color='pink'">$5,599.00 &nbsp;
+                <del>$6,399.00</del></h6>
+            </div>
+            <div class="four-content">
+              <p>Lorem ipsum dolor sit amet was i <br> consectetur adipisicing elit.</p>
+              <h6 onmousemove="this.style.color='grey'" onmouseout="this.style.color='brown'">$6,599.00 &nbsp;
+                <del>$7,399.00</del></h6>
+            </div>
+            <div class="five-content">
+              <p>NEW 2023 BODY-SOLID DELUXE <br> 2 STACK CABLE CROSSOVER</p>
+              <h6 onmousemove="this.style.color='yellow'" onmouseout="this.style.color='cyan'">$10,599.00 &nbsp;
+                <del>$11,399.00</del></h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="last">
+    <button class="buttona">THANKS FOR WATCHING</button>
+  </div>
+</body>
+</html>
+

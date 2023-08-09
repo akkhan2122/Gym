@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>About Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald&family=Passion+One&family=Rubik+Gemstones&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bungee+Inline&family=Oswald&family=Passion+One&family=Roboto+Condensed:wght@300&family=Rubik+Gemstones&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <style>
+    body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Bungee Outline', cursive, 'Oswald', sans-serif;
+}
+
+.awa {
+  position: relative;
+  text-align: center;
+}
+
+.awa img {
+  width: 100%;
+  height: auto;
+  max-height: 100vh;
+}
+
+.content {
+    flex-wrap: wrap;
+  position: absolute;
+  top: 450px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.103);
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.content h1 {
+  margin: 0;
+  font-size: 34px;
+  font-weight: 800;
+  color: black;
+  transition: color 0.3s;
+  font-family: 'Oswald', sans-serif;
+}
+
+.content p {
+  margin-top: 20px;
+  font-size: 31px;
+  color: black;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+}
+.awai img{
+    width: 100%;
+    margin-top: -5px;
+}
+.awais1 p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+}
+.last {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .last button {
+            width: 90%; /* Responsive width */
+            max-width: 678px;
+            height: auto;
+            padding: 15px;
+            font-family: 'Bungee Outline', cursive;
+            font-size: 3vw; /* Responsive font size */
+            background: none;
+            border: none;
+            margin: 0 auto; /* Center horizontally */
+        }
+
+        .buttonab {
+            background: none;
+            border: none;
+            border-radius: 50px; /* Adjust as needed */
+            font-size: 2vw; /* Responsive font size */
+            font-family: inherit;
+            border: none;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+        }
+
+        .buttonab::before {
+            content: '';
+            width: 0;
+            height: 100%;
+            border-radius: 50px; /* Adjust as needed */
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-image: linear-gradient(to right, #0fd850 0%, #f9f047 100%);
+            transition: .5s ease;
+            display: block;
+            z-index: -1;
+        }
+
+        .buttonab:hover::before {
+            width: 25em !important;
+        }
+
+        @media (max-width: 768px) {
+            .last button {
+                font-size: 4vw;
+            }
+
+            .buttonab {
+                font-size: 3vw;
+            }
+        }
+/* .last button {
+    margin-top: 59px;
+    width: 678px;
+    height: 91px;
+    font-family: 'Bungee Outline', cursive;
+    font-size: 50px;
+    background: none;
+    border: none;
+    margin-left: 348px;
+}
+
+    .buttonab {
+      background: none;
+      border: none;
+      height: 3em;
+      border-radius: 30em;
+      font-size: 15px;
+      font-family: inherit;
+      border: none;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      box-shadow: 6px 6px 12px #c5c5c5,
+        -6px -6px 12px #ffffff;
+    }
+
+    .buttonab::before {
+      content: '';
+      width: 0;
+      height: 3em;
+      border-radius: 30em;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: linear-gradient(to right, #0fd850 0%, #f9f047 100%);
+      transition: .5s ease;
+      display: block;
+      z-index: -1;
+    } */
+
+    .buttonab:hover::before {
+      width: 15em;
+    }
+@media (max-width:700px){
+    .content{
+
+        display: none;
+    }
+}
+.logo img{
+    width: 100px;
+    height: 80px;
+    margin-left: 20px;
+}
+nav{
+    height: 80px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+} nav ul{
+    display: flex;
+    list-style: none;
+    margin-top: -1px;
+}
+nav ul li {
+margin: 20px 20px;
+}
+nav ul li a{
+text-decoration: none;
+list-style: none;
+text-align: center;
+font-size: 23px;
+text-transform: uppercase;
+font-weight: 100;
+font-family: 'Anton', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Passion One', cursive;
+font-family: 'Rubik Gemstones', cursive;
+color: white;
+}
+  nav ul li a{
+    --border-radius: 25px;
+    --border-width: 7px;
+    appearance: none;
+    position: relative;
+    padding: 1em 2em;
+    background-color: #212121;
+    font-family: "Roboto", Arial, "Segoe UI", sans-serif;
+    font-size: 13px;
+    font-weight: 100;
+    color: #ffff;
+    z-index: 2;
+    border-radius: 50px;
+    top: 10px;
+  }
+  
+  nav ul li a::after {
+    --m-i: linear-gradient(#000, #000);
+    --m-o: content-box, padding-box;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: var(--border-width);
+    background-image: conic-gradient(
+          #ff0080,
+          #ff0080,
+          #ff0080,
+          #ff0080,
+          #ff0080,
+          #ff0080,
+          #ff0080
+      );
+    -webkit-mask-image: var(--m-i), var(--m-i);
+    mask-image: var(--m-i), var(--m-i);
+    -webkit-mask-origin: var(--m-o);
+    mask-origin: var(--m-o);
+    mask-clip: var(--m-o);
+    mask-composite: exclude;
+    -webkit-mask-composite: destination-out;
+    filter: hue-rotate(0);
+    animation: rotate-hue634 linear 500ms infinite;
+    animation-play-state: paused;
+    border-radius: 20px;
+    border-color: #000;
+  }
+  
+  nav ul li a::after {
+    animation-play-state: running;
+    border-radius: 10px;
+  }
+  
+  @keyframes rotate-hue634 {
+    to {
+      filter: hue-rotate(1turn);
+    }
+  }
+  
+  button,
+  button::after {
+    box-sizing: border-box;
+    border-radius: 20px;
+  }
+  
+  nav ul li a:active {
+    --border-width: 5px;
+  }
+  
+  nav ul li a:hover {
+    padding: 0.9em 1.6em;
+    border: none;
+    outline: none;
+    color: #FFF;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 17px;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 32px;
+  }
+  
+  nav ul li a::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(46, 46, 46);
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+  
+  nav ul li a::before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #07d888, #e40851, #2f00ff, #00ff37,
+        #ec0808, #2600ff, #0bd157, #2f00ff
+  );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing345 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 20px;
+    opacity: 0;
+  }
+  
+  @keyframes glowing345 {
+    0% {
+      background-position: 0 0;
+    }
+  
+    50% {
+      background-position: 400% 0;
+    }
+  
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  nav ul li a:hover::before {
+    opacity: 1;
+  }
+  
+  nav ul li a:active:after {
+    background: transparent;
+  }
+  
+  nav ul li a:active {
+    color: #000;
+    font-weight: bold;
+  }
+  nav .openmenu i{
+    color: white;
+    font-size: 23px;
+    cursor: pointer;
+display: none;
+}
+#click{
+    display: none;
+}
+@media (max-width:940px){
+    nav .openmenu i{
+        display: block;
+        margin-top: 20px;
+        margin-right: 50px;
+        font-size: 30px
+    }
+    #click:checked ~ .openmenu i::before{
+        content: "\f00d";
+    }
+    nav ul{
+        position: fixed;
+        height: 100vh ;
+        width: 100%;
+        left: -112%;
+        top: 80px;
+        background-color: black;
+        display: block;
+        text-align: center;
+        transition: all 0.3s;
+        z-index: 1;
+    }
+    #click:checked ~ ul{
+        left: 0%;
+        }
+    nav ul li {
+        margin: 40px;
+    }
+    nav ul li a{
+        font-size: 20px;
+        display: block;
+    }
+}
+.section1 img{
+    width: 100%;
+    height: 630px;
+    position: relative;
+}
+.button {
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+  }
+  .button {
+    --border-right: 6px;
+    --text-stroke-color: rgb(0, 0, 0);
+    --animation-color: #ffffff;
+    --fs-size: 2em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+    position: absolute;
+    margin-left:-845px;
+    margin-top: 400px;
+  }
+  .hover-text {
+    font-size: 31px;
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+  }
+  .button:hover .hover-text {
+
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+  }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo"><img src="./239-2392915_logo-gym-logo-png-white.png"  onmouseover="src='./images-removebg-preview.png'" onMouseout="src='./239-2392915_logo-gym-logo-png-white.png'"></div>
+    <input type="checkbox" id="click">
+    <label for="click" class="openmenu">
+        <i class="fas fa-bars"></i>
+    </label>
+    <ul>
+        <li><a href="./index.html">home</a></li>
+        <li><a href="./about.html">about</a></li>
+        <li><a href="./services.html">services</a></li>
+        <li><a href="./signup.html">sign-up</a></li>
+        <li><a href="./login.html">login</a></li>
+    </ul>
+</nav>
+  <div class="awa">
+    <img src="./man-workout-gym-working-wallpaper-preview.jpg" onclick="src='./HD-wallpaper-sports-weightlifting-bodybuilder-gym-man-muscle.jpg'">
+    <div class="content">
+      <h1 onmouseover="this.style.color='white'" onmouseout="this.style.color='black'">WELCOME TO ABOUT PAGE</h1>
+      <p>The body achieves what the mind believes.</p>
+    </div>
+  </div>
+<div class="awai">
+    <img src="./pexels-anush-gorak-1229356.jpg" alt=""  onmouseover="src='./9MqoKp.webp'" onMouseout="src='./pexels-anush-gorak-1229356.jpg'">
+</div>
+<div class="awais1">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eius officia eaque sapiente dolorem expedita consequatur deserunt debitis quam nisi, praesentium quasi nobis? Ipsum animi praesentium exercitationem ab? Recusandae temporibus laboriosam quidem odit illum odio sed neque voluptatum hic ipsum. Necessitatibus, inventore! Obcaecati, blanditiis, nemo, odio dignissimos fuga quisquam suscipit repudiandae incidunt aliquid fugit aperiam optio minima. Dicta ab eius quisquam quod odio animi assumenda autem ea eligendi possimus in expedita eaque, non sapiente rerum corrupti nesciunt odit obcaecati vero hic tenetur modi cupiditate enim atque. Officia facilis aliquid veniam earum veritatis, corrupti deleniti maxime illum, sequi delectus sed ipsa? Vero modi, voluptatibus ab soluta recusandae voluptas fugit facere nostrum similique aliquam ratione unde cupiditate. Laudantium voluptatum laborum officia? Soluta sint consequuntur pariatur voluptas blanditiis asperiores, fugiat facilis, iure officia libero et natus numquam rem perspiciatis modi labore quidem molestiae corporis a tempora animi quibusdam! Sequi nesciunt aspernatur mollitia iure cumque aperiam, vel perferendis culpa. Amet id repellendus sapiente dignissimos quibusdam neque possimus, molestiae dicta recusandae nesciunt aut, eveniet atque asperiores! Dolorum laborum iste, neque ipsum facere nulla, quaerat quia cupiditate hic aut modi numquam nesciunt necessitatibus tenetur consequatur at officia quidem. Necessitatibus ratione repudiandae quidem voluptas asperiores hic consectetur maxime, non aspernatur eligendi deserunt quod similique accusamus ullam tenetur, culpa quae praesentium eos? Facere molestiae eaque corporis, quod doloribus ipsa voluptate laborum veritatis eius repellat voluptatibus ut natus eos impedit nam exercitationem reprehenderit deserunt unde nihil nobis temporibus ducimus sint excepturi! Eveniet excepturi cupiditate possimus adipisci numquam quas aspernatur distinctio reprehenderit, laudantium maiores quo totam ipsam? Esse odio libero possimus, quo facilis quam ab adipisci quasi at consequuntur vitae reprehenderit velit molestiae veniam maiores iusto nesciunt quos distinctio quaerat perspiciatis? Possimus expedita nulla veritatis ipsum molestias numquam, doloribus tenetur porro cupiditate, illum, aliquid unde deleniti obcaecati quidem. Eveniet reiciendis non labore totam ab. Magni praesentium commodi error reiciendis neque iusto nostrum exercitationem, numquam, rerum quod recusandae veritatis! A ab sunt quas fugit quos. Quas aliquid ea facere corrupti blanditiis iste, dolorum odit unde quam ipsa expedita vitae! Natus tenetur provident nam maxime, eius quasi, quibusdam voluptatem perspiciatis optio error et unde non cumque? Alias iste sed, dolore assumenda beatae doloremque aliquid hic eveniet accusantium explicabo laboriosam ipsum autem quis, illo qui perspiciatis! Nobis laborum accusamus nisi distinctio velit, iusto aut repellat cum, tempora suscipit temporibus eum voluptatem libero odit ipsa sunt sapiente fugit corporis! Explicabo optio temporibus, rem eum dolores delectus mollitia voluptates fuga! Autem labore dolorem repudiandae iure, minus enim quia obcaecati doloremque tenetur amet quam vero temporibus qui vitae ullam nulla perspiciatis sunt quasi at officia? At nesciunt repellendus, error iste aliquam mollitia labore, sed eligendi cupiditate atque, tempora sapiente laudantium dolorem distinctio consectetur illum quam sequi nihil iusto voluptates quas? Facere nemo minima, totam ea voluptate architecto repellat molestiae suscipit sequi natus explicabo similique atque, temporibus in unde sint, consequuntur nisi cum. Vitae, dolor cupiditate ex iste eaque quod sunt exercitationem in quae facere commodi iure optio impedit id incidunt at ab corrupti maxime ducimus sit soluta consequuntur hic asperiores cum! Maxime minima eveniet et voluptates quaerat nihil? Accusamus soluta voluptates vero veniam atque ratione omnis nemo amet facere corrupti. Corrupti voluptatum autem doloribus eius tempore? Voluptates asperiores alias, quaerat aperiam molestias, perspiciatis sit iste laudantium suscipit explicabo facilis nihil ipsam ea obcaecati totam commodi itaque nulla eveniet quos earum. Accusantium totam quasi vel officia sit quisquam blanditiis similique quam delectus. Iste ipsa debitis nisi odit quas, officia, facere corporis vero praesentium veniam doloribus cum nobis nulla maiores est excepturi non ducimus, fugit distinctio possimus minus eaque sequi! Esse, porro suscipit ullam culpa quis delectus atque tenetur ea nulla exercitationem facere non fuga. Eligendi placeat aut ut iure sunt quasi veritatis iste explicabo, sed, tenetur fugiat fugit dicta ipsum! Qui rem laboriosam, a quod suscipit iste eveniet commodi architecto adipisci explicabo nobis vel placeat itaque officiis assumenda, natus ratione aliquid quas asperiores corrupti officia ea. Quae vel qui voluptatem porro perferendis et reiciendis fugiat deleniti maxime nam, quia, tempore ullam tempora facilis. Voluptatem, quaerat? Illo laudantium, libero, nesciunt hic amet, aperiam quae rerum incidunt non voluptatem at accusamus perferendis. Ducimus, voluptas praesentium maiores, quam fuga fugit quos ex cum molestias cumque id iusto est eos molestiae quae sequi. Vitae corporis ex iste commodi quod tempore obcaecati assumenda illo eaque, suscipit culpa voluptatibus deleniti, quam quidem facilis perferendis eligendi repellat quos doloribus dolorum nemo ab cupiditate maiores! In dolores aperiam libero! Facere accusamus obcaecati et velit! Itaque, tenetur natus deleniti officiis atque esse in, dolor eius dolorem autem sapiente tempora cumque nostrum eos ipsum quia voluptatem ratione. Quod veritatis et provident. Alias asperiores fugit doloremque! </p>
+</div>
+<div class="last">
+    <button class="buttonab">THANKS FOR WATCHING</button>
+  </div>
+</body>
+</html>
